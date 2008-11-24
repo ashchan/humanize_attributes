@@ -7,9 +7,24 @@ Add humanity to Rails ActiveRecord column names.
 Example
 =======
 
-humanize_attributes :login => "用户名",
-                    :password => "密码"
+	humanize_attributes :login => "User Name",
+                    	:password => "Secret Key"
 
+Look for a more elegant way?
+=======
+
+Rails 2.2 has brought us powerful I18N, now we can localize ActiveRecord model names very easily, just drop the following in the config/locales/en.yml:
+
+	en:
+	    activerecord:
+	        models:
+	            user: "Member"
+	        attributes:
+	            user:
+	                login:		"User Name"
+					password:	"Secret Key"
+					
+See [here](http://blog.ashchan.com/archive/2008/11/24/rails-i18n-activerecord-model-human-name-made-easy/) for more details.
 
 Credits
 =======
