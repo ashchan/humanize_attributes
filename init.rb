@@ -1,0 +1,1 @@
+require 'humanize_attributes'

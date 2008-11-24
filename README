@@ -1,0 +1,19 @@
+HumanizeAttributes
+==================
+
+Add humanity to Rails ActiveRecord column names.
+
+
+Example
+=======
+
+humanize_attributes :login => "用户名",
+                    :password => "密码"
+
+
+Credits
+=======
+
+The original idea came from [Changing human attribute labels in Rails validation messages](http://fatvegan.com/2008/05/13/changing-human-attribute-labels-in-rails-validation-messages/).
+
+Copyright (c) 2008 James Chan, released under the MIT license
